@@ -42,7 +42,7 @@ Para completar este exercício prático, você precisa:
 - **Configurar um ambiente de desenvolvimento CAP**, incluindo **Node.js (versão LTS)** e **SAP Business Application Studio** ou **VS Code** com a **extensão SAP CDS**.  
 - **Instalar o CAP CLI (`@sap/cds`)** via `npm install -g @sap/cds`.  
 - **Ter um banco de dados pronto**, como **SQLite** para desenvolvimento local ou **SAP HANA** para implantação na nuvem.  
-- **Usar um cliente REST**, como **Postman** ou **arquivos de teste HTTP**, para validar os serviços implementados.  
+- **Usar um cliente REST**, **arquivos de teste HTTP**, para validar os serviços implementados.  
 - **Preparar arquivos CSV** para carregar dados iniciais no sistema.  
 - **Garantir acesso ao SAP BTP**, caso o sistema seja implantado em um ambiente na nuvem.  
 
