@@ -4,12 +4,11 @@ This exercise focuses on building an **Airline Management System** using **SAP C
 ## Prerequisites
 
 1. **Development Environment Setup**  
-   - **Node.js** (LTS version).  
-   - **SAP CAP CLI** installed via `npm install -g @sap/cds`.  
-   - A code editor like **VS Code** with the **SAP CDS extension**.
-
-![image](https://github.com/user-attachments/assets/e26fe736-b19b-480e-90b8-86618ed49863)
+   - **Node.js** (LTS version).
+![image](https://github.com/user-attachments/assets/e26fe736-b19b-480e-90b8-86618ed49863)  
+   - **SAP CAP CLI** installed via `npm install -g @sap/cds`.
 ![image](https://github.com/user-attachments/assets/7b1805a3-a5be-4fb7-b0ed-66864bd2292f)
+   - A code editor like **VS Code** with the **SAP CDS extension**.
 ![image](https://github.com/user-attachments/assets/d20ee858-1e82-48a1-98fd-234b665167ae)
 
 2. **Database**  
