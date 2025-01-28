@@ -16,11 +16,11 @@ Este exercício prático demonstra a **flexibilidade e escalabilidade** do **SAP
 
 ## **Exercícios**  
 
-| Exercício | Descrição |
-|-----------|------------|
-| **CAP Exercício 0** | Configuração do ambiente de desenvolvimento CAP |
-| **CAP Exercício 1** | Definir o modelo de dados (`schema.cds`) para o Sistema de Gestão Aérea |
-| **CAP Exercício 2** | Carregar dados iniciais usando arquivos `.csv` para companhias, aeronaves, aeroportos e conexões |
-| **CAP Exercício 3** | Implementar serviços REST para gerenciar passageiros, reservas e voos |
-| **CAP Exercício 4** | Aplicar regras de negócio e validações (CPF, idade mínima, disponibilidade de assentos, preços) |
-| **CAP Exercício 5** | Testar os serviços usando Postman ou arquivos de teste HTTP |  
+| Exercícios |
+|-----------|
+| CAP Exercício 0: Configuração do ambiente de desenvolvimento CAP |
+| CAP Exercício 1: Definir o modelo de dados (`schema.cds`) |
+| CAP Exercício 2: Carregar dados iniciais usando arquivos `.csv` |
+| CAP Exercício 3: Implementar serviços REST para gerenciar as entidades |
+| CAP Exercício 4: Aplicar regras de negócio e validações |
+| CAP Exercício 5: Testar os serviços usando arquivos de teste HTTP |  
