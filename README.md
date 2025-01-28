@@ -64,7 +64,10 @@ Você irá:
 Esta experiência prática destaca como o **SAP CAP possibilita o desenvolvimento eficiente e flexível de soluções empresariais**, mantendo uma **arquitetura clean core**.
 
 ## Exercícios
-### [**Parte 1 - SAP CAP**](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex0)
+
+### [**Preparação**](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex0)
+
+### **SAP CAP**
 
 - [**CAP Exercício 0:** Configuração do ambiente de desenvolvimento CAP](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex99)
 - [**CAP Exercício 1:** Definir o modelo de dados (`schema.cds`) para o Sistema de Gestão Aérea](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex1)
