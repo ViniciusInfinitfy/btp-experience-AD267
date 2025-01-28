@@ -59,7 +59,7 @@ Você irá:
 - **Carregar dados iniciais** usando **arquivos CSV**.  
 - **Desenvolver serviços REST** para operações CRUD e consultas de voos.  
 - **Implementar lógica de validação** para garantir conformidade com as regras de negócio.  
-- **Testar o sistema** usando **Postman**, demonstrando como o SAP CAP permite a construção de **aplicações empresariais escaláveis e flexíveis**.  
+- **Testar o sistema**, demonstrando como o SAP CAP permite a construção de **aplicações empresariais escaláveis e flexíveis**.  
 
 Esta experiência prática destaca como o **SAP CAP possibilita o desenvolvimento eficiente e flexível de soluções empresariais**, mantendo uma **arquitetura clean core**.
 
