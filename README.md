@@ -31,7 +31,7 @@ Este exercício prático orienta a criação de um **Sistema de Gestão Aérea**
 - **Carregar dados iniciais** utilizando arquivos `.csv`.  
 - **Implementar serviços REST** para gerenciar passageiros, reservas, voos e companhias.  
 - **Aplicar regras de negócio** como **validação de CPF, idade mínima, disponibilidade de assentos e restrições de preços**.  
-- **Testar o sistema** utilizando **Postman** ou **arquivos de teste HTTP**, garantindo **integridade dos dados e escalabilidade do sistema**.  
+- **Testar o sistema** utilizando **arquivos de teste HTTP**, garantindo **integridade dos dados e escalabilidade do sistema**.  
 
 ---
 
