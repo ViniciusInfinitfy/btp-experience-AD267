@@ -1,42 +1,64 @@
-# BTP-Experience2025-AD267
-Extending with ABAP Cloud and SAP Cloud Application Programming Model
+# **BTP-Experience2025-CAP**  
+Construindo um Sistema de Gestão Aérea com SAP Cloud Application Programming Model  
 
-## Description
-This repository contains the material for the SAP BTP Experience 2025 session called AD267 - Extending with ABAP Cloud and SAP Cloud Application Programming Model.
+## **Descrição**  
+Este repositório contém os materiais para a sessão **SAP BTP Experience 2025**, focada na construção de um **Sistema de Gestão Aérea** utilizando o **SAP Cloud Application Programming Model (CAP)**.  
 
-## Overview
+## **Visão Geral**  
 
-### Extending SAP systems
-SAP emphasizes maintaining a clean core by utilizing the various extensibility options illustrated in the diagram below. In this hands-on exercise, we will leverage developer extensibility and side-by-side extensibility, demonstrating how seamless communication between these two approaches can be.
-![image](https://github.com/user-attachments/assets/3d86fa51-dd78-4547-9b7d-db7f7d1d88f0)
+### **Expandindo Sistemas SAP**  
+A SAP enfatiza a importância de manter um **clean core** utilizando diversas opções de extensibilidade. Neste exercício prático, focaremos na **extensibilidade para desenvolvedores** e na **extensibilidade side-by-side**, demonstrando como essas abordagens se integram de forma eficiente.  
 
-### Architecture of a CAP application
-A CAP-based project, structured as a Multi-Target Application (MTA), can be divided into three layers: database, service, and presentation (if required). In this hands-on exercise, we will explore how these layers interact and demonstrate how easily they can communicate within a scalable and modular architecture.
+![image](https://github.com/user-attachments/assets/3d86fa51-dd78-4547-9b7d-db7f7d1d88f0)  
 
-![image](https://github.com/user-attachments/assets/fcebdd07-8048-4343-bf6f-b8ea8f1991c3)
+### **Arquitetura de uma Aplicação CAP**  
+Um **projeto baseado em CAP**, estruturado como uma **Multi-Target Application (MTA)**, é dividido em três camadas:  
+- **Banco de Dados** – Define entidades e modelos de dados.  
+- **Serviço** – Implementa a lógica de negócios e expõe APIs.  
+- **Apresentação** – (Opcional) Fornece uma camada de UI para os usuários finais.  
 
-SAP CAP (Cloud Application Programming) follows a convention-over-configuration approach, enabling developers to build scalable and enterprise-grade applications efficiently. In this hands-on exercise, we will explore how CAP simplifies data modeling, service definition, and extensibility, demonstrating its seamless integration with SAP BTP and other enterprise solutions.
+Este exercício prático explora como essas camadas interagem dentro de uma **arquitetura escalável e modular**.  
 
-![image](https://github.com/user-attachments/assets/a1ec1477-3d9b-4417-8f23-8abdb180a3b7)
+![image](https://github.com/user-attachments/assets/fcebdd07-8048-4343-bf6f-b8ea8f1991c3)  
 
-### Exercise Overview
-This hands-on exercise demonstrates how to build an Airline Management System using SAP CAP. It covers data modeling, CSV data loading, and REST services for managing passengers, reservations, flights, and companies. Key business rules like CPF validation, minimum age, seat availability, and pricing constraints ensure data integrity. Finally, the system is tested to validate functionality, showcasing CAP’s scalability and enterprise integration.
+O SAP CAP segue uma abordagem **convention-over-configuration**, permitindo que os desenvolvedores criem **aplicações empresariais escaláveis** de forma eficiente. Este exercício cobre **modelagem de dados, definição de serviços e extensibilidade**, demonstrando a **integração fluida com o SAP BTP** e outros sistemas empresariais.  
 
-## Requirements 
+![image](https://github.com/user-attachments/assets/a1ec1477-3d9b-4417-8f23-8abdb180a3b7)  
 
-To carry out this hands-on exercise, you need to:  
+### **Visão Geral do Exercício**  
+Este exercício prático orienta a criação de um **Sistema de Gestão Aérea** usando **SAP CAP**. Você irá:  
+- **Definir o modelo de dados** (`schema.cds`) com entidades como **Passageiros, Voos, Reservas e Aeronaves**.  
+- **Carregar dados iniciais** utilizando arquivos `.csv`.  
+- **Implementar serviços REST** para gerenciar passageiros, reservas, voos e companhias.  
+- **Aplicar regras de negócio** como **validação de CPF, idade mínima, disponibilidade de assentos e restrições de preços**.  
+- **Testar o sistema** utilizando **Postman** ou **arquivos de teste HTTP**, garantindo **integridade dos dados e escalabilidade do sistema**.  
 
-- **Set up a CAP development environment**, including **Node.js (LTS version)** and **SAP Business Application Studio** or **VS Code** with the **SAP CDS Extension**.  
-- **Install CAP CLI (`@sap/cds`)** using `npm install -g @sap/cds`.  
-- **Have a database ready**, such as **SQLite** for local development or **SAP HANA** for cloud deployment.  
-- **Use a REST client** like **Postman** or **HTTP test files** to validate the implemented services.  
-- **Prepare CSV files** to load initial data into the system.  
-- **Ensure access to SAP BTP**, if deploying in a cloud environment.  
+---
 
-Go to **Getting Started - Preparation** to check the installation details and environment setup before proceeding with the first exercise.
+## **Requisitos**  
 
-### Business Scenario
+Para completar este exercício prático, você precisa:  
 
-In this hands-on workshop, we will implement an **Airline Management System** using **SAP CAP** to manage operations like passenger registration, flight scheduling, and reservations. The application will include entities such as **Passenger, Aircraft, Reservation, and Flight Schedule**, adhering to business rules like CPF validation, minimum age, and seat availability.  
+- **Configurar um ambiente de desenvolvimento CAP**, incluindo **Node.js (versão LTS)** e **SAP Business Application Studio** ou **VS Code** com a **extensão SAP CDS**.  
+- **Instalar o CAP CLI (`@sap/cds`)** via `npm install -g @sap/cds`.  
+- **Ter um banco de dados pronto**, como **SQLite** para desenvolvimento local ou **SAP HANA** para implantação na nuvem.  
+- **Usar um cliente REST**, como **Postman** ou **arquivos de teste HTTP**, para validar os serviços implementados.  
+- **Preparar arquivos CSV** para carregar dados iniciais no sistema.  
+- **Garantir acesso ao SAP BTP**, caso o sistema seja implantado em um ambiente na nuvem.  
 
-You will define the data model, load initial data via **CSV files**, and create **REST services** for CRUD operations and queries. These services will enforce validations to ensure data accuracy and business compliance. Finally, the system will be tested using tools like **Postman**, showcasing CAP’s ability to build scalable, enterprise-grade applications.  
+Acesse **Getting Started - Preparation** para verificar os detalhes da instalação e garantir que o ambiente está pronto antes de iniciar o primeiro exercício.  
+
+### **Cenário de Negócio**  
+
+Neste exercício prático, implementaremos um **Sistema de Gestão Aérea** usando **SAP CAP**, permitindo a gestão eficiente de **cadastro de passageiros, agendamento de voos e reservas**.  
+
+A aplicação inclui **entidades principais** como **Passageiro, Aeronave, Reserva e Horário de Voo**, garantindo conformidade com regras de negócio como **validação de CPF, idade mínima e disponibilidade de assentos**.  
+
+Você irá:  
+- **Definir o modelo de dados** e configurar associações.  
+- **Carregar dados iniciais** usando **arquivos CSV**.  
+- **Desenvolver serviços REST** para operações CRUD e consultas de voos.  
+- **Implementar lógica de validação** para garantir conformidade com as regras de negócio.  
+- **Testar o sistema** usando **Postman**, demonstrando como o SAP CAP permite a construção de **aplicações empresariais escaláveis e flexíveis**.  
+
+Esta experiência prática destaca como o **SAP CAP possibilita o desenvolvimento eficiente e flexível de soluções empresariais**, mantendo uma **arquitetura clean core**. 🚀
