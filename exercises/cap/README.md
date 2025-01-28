@@ -1,26 +1,26 @@
-# Use SAP Cloud Application Programming Model with IDE Extensions
+# **Use o SAP Cloud Application Programming Model com Extensões de IDE**  
 
-## Overview  
-**SAP CAP (Cloud Application Programming)** is a development model designed to build scalable, cloud-ready business applications, services, and extensions. It integrates seamlessly with **SAP BTP** and can run on public or private cloud, as well as on-premise environments.  
+## **Visão Geral**  
+O **SAP CAP (Cloud Application Programming)** é um modelo de desenvolvimento projetado para criar **aplicações empresariais escaláveis e preparadas para a nuvem**. Ele se integra perfeitamente ao **SAP BTP** e pode ser executado em **nuvem pública, privada ou on-premise**.  
 
-This part of the hands-on workshop will guide you through building an **Airline Management System** using SAP CAP.  
+Nesta parte do exercício prático, você será guiado na construção de um **Sistema de Gestão Aérea** utilizando **SAP CAP**.  
 
-The system will include entities such as **Passengers, Flights, Reservations, and Aircraft**, along with validations and business rules to ensure data consistency. Using SAP CAP, you will implement services to handle core operations like passenger registration, flight scheduling, and seat reservations.  
+O sistema incluirá entidades como **Passageiros, Voos, Reservas e Aeronaves**, juntamente com validações e regras de negócio para garantir a **consistência dos dados**. Utilizando o **SAP CAP**, você implementará serviços para gerenciar operações essenciais, como **cadastro de passageiros, agendamento de voos e reservas de assentos**.  
 
-## Business Scenario  
-In this part of the hands-on workshop, the scenario we will implement is an **Airline Management System** that enables efficient management of flight operations. The system will allow users to register passengers, manage flight schedules, and handle reservations, ensuring compliance with rules such as CPF validation, minimum age, and seat availability.  
+## **Cenário de Negócio**  
+Nesta parte do exercício prático, implementaremos um **Sistema de Gestão Aérea** que permitirá a **gestão eficiente das operações de voo**. O sistema possibilitará que os usuários **cadastrem passageiros, gerenciem horários de voos e realizem reservas**, garantindo o cumprimento de regras como **validação de CPF, idade mínima e disponibilidade de assentos**.  
 
-You will begin by defining the data model using **Core Data Services (CDS)** and generating the required development artifacts. REST services will be created to manage passengers and reservations while ensuring business rules are enforced. The system will be draft-enabled and support transactional operations, allowing data consistency and extensibility.  
+Você começará definindo o modelo de dados utilizando **Core Data Services (CDS)** e gerando os artefatos de desenvolvimento necessários. **Serviços REST** serão criados para gerenciar passageiros e reservas, garantindo que as regras de negócio sejam aplicadas. O sistema terá suporte para operações transacionais e rascunhos (**draft-enabled**), permitindo **consistência de dados e extensibilidade**.  
 
-This hands-on exercise showcases the flexibility and scalability of SAP CAP for building enterprise-grade applications.  
+Este exercício prático demonstra a **flexibilidade e escalabilidade** do **SAP CAP** na construção de **aplicações empresariais robustas**.  
 
-## Exercises
+## **Exercícios**  
 
-| Exercise | Description |
-|----------|------------|
-| **CAP Exercise 0** | Setting up the CAP development environment |
-| **CAP Exercise 1** | Define the data model (`schema.cds`) for the Airline Management System |
-| **CAP Exercise 2** | Load initial data using `.csv` files for companies, aircraft, airports, and connections |
-| **CAP Exercise 3** | Implement REST services for managing passengers, reservations, and flights |
-| **CAP Exercise 4** | Apply business rules and validations (CPF, minimum age, seat availability, pricing) |
-| **CAP Exercise 5** | Test the services using Postman or HTTP test files |
+| Exercício | Descrição |
+|-----------|------------|
+| **CAP Exercício 0** | Configuração do ambiente de desenvolvimento CAP |
+| **CAP Exercício 1** | Definir o modelo de dados (`schema.cds`) para o Sistema de Gestão Aérea |
+| **CAP Exercício 2** | Carregar dados iniciais usando arquivos `.csv` para companhias, aeronaves, aeroportos e conexões |
+| **CAP Exercício 3** | Implementar serviços REST para gerenciar passageiros, reservas e voos |
+| **CAP Exercício 4** | Aplicar regras de negócio e validações (CPF, idade mínima, disponibilidade de assentos, preços) |
+| **CAP Exercício 5** | Testar os serviços usando Postman ou arquivos de teste HTTP |  
