@@ -67,8 +67,8 @@ Esta experiência prática destaca como o **SAP CAP possibilita o desenvolviment
 ### [**SAP CAP** - Preparação](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex0)
 
 - [**CAP Exercício 0:** Configuração do ambiente de desenvolvimento CAP](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex99)
-- [**CAP Exercício 1:** Definir o modelo de dados (`schema.cds`) para o Sistema de Gestão Aérea](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex1)
-- [**CAP Exercício 2:** Carregar dados iniciais usando arquivos `.csv` para companhias, aeronaves, aeroportos e conexões](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex2)
-- [**CAP Exercício 3:** Implementar serviços REST para gerenciar passageiros, reservas e voos](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex3)
-- [**CAP Exercício 4:** Aplicar regras de negócio e validações (CPF, idade mínima, disponibilidade de assentos, preços)](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex4)
-- [**CAP Exercício 5:** Testar os serviços usando Postman ou arquivos de teste HTTP](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex5)
+- [**CAP Exercício 1:** Definir o modelo de dados (`schema.cds`)](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex1)
+- [**CAP Exercício 2:** Carregar dados iniciais usando arquivos `.csv`](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex2)
+- [**CAP Exercício 3:** Implementar serviços REST para gerenciar as entidades](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex3)
+- [**CAP Exercício 4:** Aplicar regras de negócio e validações](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex4)
+- [**CAP Exercício 5:** Testar os serviços arquivos de teste HTTP](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex5)
