@@ -38,6 +38,6 @@ Isso significa que seu ambiente está pronto!
 ---
 
 ## **Conclusão**  
-Agora que seu ambiente está configurado, você pode seguir para o [**CAP Exercício 1**](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex1), onde definiremos o modelo de dados para o **Sistema de Gestão Aérea**.  
+Agora que seu ambiente está configurado, você pode seguir para o [**CAP Exercício 1: Definir o modelo de dados (schema.cds)**](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex1), onde definiremos o modelo de dados para o **Sistema de Gestão Aérea**.  
 
 Se tiver algum problema, revise os passos acima ou peça ajuda durante a sessão.
