@@ -1,8 +1,8 @@
-# **BTP-Experience2025-CAP**  
+# **BTP-Experience-CAP**  
 Construindo um Sistema de Gestão Aérea com SAP Cloud Application Programming Model  
 
 ## **Descrição**  
-Este repositório contém os materiais para a sessão **SAP BTP Experience 2025**, focada na construção de um **Sistema de Gestão Aérea** utilizando o **SAP Cloud Application Programming Model (CAP)**.  
+Este repositório contém os materiais para a sessão **BTP Experience em 2025**, focada na construção de um **Sistema de Gestão Aérea** utilizando o **SAP Cloud Application Programming Model (CAP)**.  
 
 ## **Visão Geral**  
 
