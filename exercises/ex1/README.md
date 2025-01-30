@@ -281,6 +281,8 @@ cds deploy --to sqlite
 
 Isso criará o banco de dados **SQLite** com as tabelas correspondentes às entidades definidas.
 
+![image](https://github.com/user-attachments/assets/a7fbb6fb-15f7-45e6-90ad-a43527dd87bb)
+
 ---
 
 ## **Passo 4: Testar o Modelo**
