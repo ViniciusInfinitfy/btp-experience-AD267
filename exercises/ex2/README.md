@@ -32,11 +32,32 @@ Após o deploy, inicie o servidor CAP:
 cds watch
 ```
 
-Acesse o navegador:
+Você irá perceber que ele carregou todos os arquivos csv's, porém, eles estão sendo todos puxados da memória da aplicação. Ou seja, se nós realizassemos uma alteração em um dos dados, e reiniciassemos o servidor, seria como se não tivessse acontecido nada.
+
+![image](https://github.com/user-attachments/assets/ed86dc64-7017-452d-983d-a36f61c00476)
+
+Por isso, precisamos realizar uma configuração no arquivo `package.json`, que é o arquivo de configuração do nosso projeto.
+
+Digite esse código dentro do arquivo `package.json`, para configurar essa captura e armazenamento de dados em nosso projeto:
+
+```sh
+"cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db.sqlite"
+        }
+      }
+    }
+  }
 ```
-http://localhost:4004
-```
-E verifique as entidades como `Companhia`, `Passageiro` e `Aeronave` para garantir que os dados foram carregados.
+
+Pronto, dessa forma, quando nós iniciarmos o projeto, os dados serão armazenados e alterados diretamente do banco de dados sqlite.
+
+![image](https://github.com/user-attachments/assets/40895da0-304e-4b8c-9942-603a1f28b93f)
+
+![image](https://github.com/user-attachments/assets/ed0bb54e-bb70-4775-810d-eb59393ce991)
 
 ---
 
