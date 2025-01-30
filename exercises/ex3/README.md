@@ -1,1 +1,1 @@
-# CAP Exercício 3: Implementar serviços REST para gerenciar as entidades
+# CAP Exercício 3: Implementar serviços para gerenciar as entidades
