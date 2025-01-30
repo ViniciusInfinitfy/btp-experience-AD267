@@ -8,7 +8,7 @@ Nesta aula, você irá carregar os dados iniciais para as entidades do **Sistema
 ## **Passo 1: Baixar os Arquivos CSV do Repositório**
 Os arquivos CSV contendo os dados iniciais já estão disponíveis no repositório. Você pode baixá-los [clicando aqui](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/csv%20records) e adicionando-os à pasta **`db/data`** no seu projeto.
 
-![image](https://github.com/user-attachments/assets/f852dba8-62a6-4f79-9513-60c0e4ade21f)
+![image](https://github.com/user-attachments/assets/1021e09f-633b-4c1f-ac56-2c2b34a13cbd)
 
 ---
 
