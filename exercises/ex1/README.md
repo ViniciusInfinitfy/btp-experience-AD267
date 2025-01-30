@@ -235,7 +235,7 @@ entity ReservaPassagem : managed {
 2. Abra o arquivo `cep.cds` e adicione a estrutura para armazenar dados de CEP:
 
 ```cds
-namespace processo_seletivo.esquema;
+namespace btpexp.esquema;
 
 entity Cep {
   key CEP : String(9);
