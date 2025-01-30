@@ -267,7 +267,13 @@ Se não houver erros, os modelos foram reconhecidos com sucesso.
 ---
 
 ## **Passo 3: Implantar os Modelos no Banco de Dados**
-Para garantir que o banco de dados esteja sincronizado com os modelos definidos, execute:
+Para garantir que o banco de dados esteja sincronizado com os modelos definidos, execute os seguintes comandos:
+
+```sh
+npm install
+```
+
+Isso vai fazer instalar todas as **dependencias necessárias** para a aplicação funcionar corretamente.
 
 ```sh
 cds deploy --to sqlite
