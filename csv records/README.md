@@ -1,7 +1,7 @@
 # Registros para Banco de Dados
 
 ## Descrição
-Esses são os dados e tabelas necessárias referentes as entidades criadas para o projeto. Para realizar o download de todos os csv's de uma vez, basta baixar o arquivo "*download csv data*".
+Esses são os dados e tabelas necessárias referentes as entidades criadas para o projeto. Para realizar o download de todos os csv's de uma vez, basta baixar o arquivo "*download csv data.zip*".
 
 Após realizar a criação das entidades, adicione os arquivos csv dentro da pasta db/data para que seus respectivos dados sejam adicionados!
 
