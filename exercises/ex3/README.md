@@ -112,13 +112,13 @@ Agora, para verificar se esse serviço está devidamente configurado e bem local
 cds watch
 ```
 
-![image](https://github.com/user-attachments/assets/a9240b6f-b8a2-47a8-8718-ea55a8bd142e)
+![image](https://github.com/user-attachments/assets/6bf2393a-a588-440e-958a-3911f2d1dfdc)
 
 ---
 
 Verifique se carregou to servidor normalmente. Após isso, acesse o link do localhost e visualize os serviços criados na tela inicial.
 
-![image](https://github.com/user-attachments/assets/0db534b7-14c4-4bac-bcb1-957058d5f480)
+![image](https://github.com/user-attachments/assets/10a2bb67-8905-4d40-813c-fa33eef2ce49)
 
 ---
 
