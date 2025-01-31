@@ -20,7 +20,7 @@ cds deploy --to sqlite
 ```
 
 📌 **O que esse comando faz:**  
-- Cria as tabelas no banco de dados com base no modelo **`airline.cds`** e **`cep.cds`**.
+- Cria as tabelas no banco de dados com base no modelo **`airline.cds`**.
 - Carrega automaticamente os dados dos arquivos CSV.
 
 ---
