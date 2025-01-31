@@ -1,16 +1,15 @@
-# **CAP Exercício 1: Definição do Modelo de Dados (`airline.cds` e `cep.cds`)**  
+# **CAP Exercício 1: Definição do Modelo de Dados (`airline.cds`)**  
 
 ## **Objetivo**  
 Neste exercício, você irá definir o **modelo de dados** do **Sistema de Gestão Aérea** utilizando **Core Data Services (CDS)**. O modelo será dividido em dois arquivos:  
 
-- **`airline.cds`**: Contém as entidades relacionadas à gestão de companhias aéreas, aeronaves, aeroportos, voos, passageiros e reservas.  
-- **`cep.cds`**: Contém a entidade `Cep`, que armazena dados de endereçamento para companhias e passageiros.  
+- **`airline.cds`**: Contém as entidades relacionadas à gestão de companhias aéreas, aeronaves, aeroportos, voos, passageiros e reservas.   
 
 Ao final desta etapa, o sistema terá um **modelo de dados estruturado**, permitindo a implementação dos serviços no próximo exercício.  
 
 ---
 
-## **Passo 1: Criar os Arquivos de Modelo de Dados (`airline.cds` e `cep.cds`)**  
+## **Passo 1: Criar os Arquivos de Modelo de Dados (`airline.cds`)**  
 
 ### **1. Criando o Arquivo `airline.cds`**  
 1. No diretório do projeto, vá para a pasta `db` e crie o arquivo `airline.cds`:  
@@ -222,34 +221,6 @@ entity ReservaPassagem : managed {
         // Associação com Horário de Voo
         horario_voo    : Association to HorarioVoo
                              on horario_voo.id_horario_voo = id_horario_voo @assert.target;
-}
-```
-
----
-
-### **2. Criando o Arquivo `cep.cds`**  
-1. No diretório `db`, crie o arquivo `cep.cds`:  
-
-![image](https://github.com/user-attachments/assets/3c16dc3b-0f71-4a2d-8b73-853e77d96374)
-   
-2. Abra o arquivo `cep.cds` e adicione a estrutura para armazenar dados de CEP:
-
-```cds
-namespace btpexp.esquema;
-
-entity Cep {
-  key CEP : String(9);
-  logradouro : String;
-  complemento : String;
-  bairro : String;
-  localidade : String;
-  uf : String(2);
-  estado : String;
-  regiao : String;
-  ibge : String;
-  gia : String;
-  ddd : String(3);
-  siafi : String;
 }
 ```
 
