@@ -1,4 +1,4 @@
-# CAP Exercício 3: Implementar serviços para gerenciar as entidades
+![image](https://github.com/user-attachments/assets/4d2118fa-df04-4c53-b74a-52c0f19a26f9)# CAP Exercício 3: Implementar serviços para gerenciar as entidades
 
 ## **Objetivo**  
 Nesta parte do exercício, você irá criar os serviços necessários para o **Sistema de Gestão Aérea** e o **serviço de consulta de CEP**. Serão definidos dois arquivos de serviço inicialmente: **`airline.cds`** e **`cep.cds`**.
@@ -47,13 +47,13 @@ service AirlineService @(path: '/airline') {
         max    : 100
     }
     entity HorarioVoo          as projection on nm.HorarioVoo;
-    annotate HorarioVoo with { modifiedAt @odata.etag }
+    annotate nm.HorarioVoo with { modifiedAt @odata.etag }
 
     entity Passageiro          as projection on nm.Passageiro;
-    annotate Passageiro with { modifiedAt @odata.etag }
+    annotate nm.Passageiro with { modifiedAt @odata.etag }
 
     entity ReservaPassagem     as projection on nm.ReservaPassagem;
-    annotate ReservaPassagem with { modifiedAt @odata.etag }
+    annotate nm.ReservaPassagem with { modifiedAt @odata.etag }
 }
 ```
 
@@ -63,7 +63,7 @@ O arquivo **`airline.cds`** define o **serviço REST** chamado **`AirlineService
 
 ### **Definição do serviço**
 
-![image](https://github.com/user-attachments/assets/c7d40010-e89d-4c23-b57d-5a10596e5233)
+![image](https://github.com/user-attachments/assets/0ee81e8b-e5e5-44f3-8fa8-d59f34c542f6)
 
 - **`using btpexp.airlines as nm`**: Importa as definições das entidades do arquivo **`airline.cds`** na pasta **`/db`** e atribui o alias **`nm`** para facilitar o acesso às entidades.
 - **`service AirlineService`**: Define o serviço chamado **`AirlineService`**, que estará acessível na URL base **`/airline`**.
