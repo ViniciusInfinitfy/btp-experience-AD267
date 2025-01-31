@@ -10,7 +10,7 @@ O para o sistema de aviação será capaz de expor entidades como **Aeronave**, 
 ## **Passo 1: Criar os Arquivos de Serviço**
 1. Na pasta **`/srv`**, crie os arquivos:
 
-   ![image](https://github.com/user-attachments/assets/03c01bc4-c0a4-4058-8d50-9c4dcfc701d3)
+   ![image](https://github.com/user-attachments/assets/1d8311b2-001e-4c6e-a705-71188240e27a)
 
 ---
 
