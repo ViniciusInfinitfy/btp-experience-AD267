@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4d2118fa-df04-4c53-b74a-52c0f19a26f9)# CAP Exercício 3: Implementar serviços para gerenciar as entidades
+# CAP Exercício 3: Implementar serviços para gerenciar as entidades
 
 ## **Objetivo**  
 Nesta parte do exercício, você irá criar os serviços necessários para o **Sistema de Gestão Aérea** e o **serviço de consulta de CEP**. Serão definidos dois arquivos de serviço inicialmente: **`airline.cds`** e **`cep.cds`**.
