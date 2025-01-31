@@ -8,7 +8,7 @@ Nesta parte do exercício, você irá adicionar funcionalidades de validação e
 ## **Passo 1: Criar os arquivos de serviço no backend**
 Navegue até a pasta **`/srv`** e crie os seguintes arquivos:
 
-![image](https://github.com/user-attachments/assets/0db9b5cd-412c-4706-86fd-2782417566fe)
+![image](https://github.com/user-attachments/assets/8f11a019-a362-4486-98fc-d7fabf1c07da)
 
 ---
 
