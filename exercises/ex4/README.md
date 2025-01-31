@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8afc84bd-3904-463a-9087-92d7ded9a73b)# CAP Exercício 4: Aplicar regras de negócio e validações
+# CAP Exercício 4: Aplicar regras de negócio e validações
 
 ## **Objetivo**  
 Nesta parte do exercício, você irá adicionar funcionalidades de validação e gerenciamento personalizado para as entidades **`Passageiro`** e **`ReservaPassagem`**, usando arquivos **JavaScript** no backend do **SAP CAP**. Para isso, você configurará os arquivos **`passageiro-srv.js`**, **`reserva_passagem-srv.js`** e **`airline.js`**.
