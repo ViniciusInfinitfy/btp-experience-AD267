@@ -1,9 +1,9 @@
 # CAP Exercício 3: Implementar serviços para gerenciar as entidades
 
 ## **Objetivo**  
-Nesta parte do exercício, você irá criar os serviços necessários para o **Sistema de Gestão Aérea** e o **serviço de consulta de CEP**. Serão definidos dois arquivos de serviço inicialmente: **`airline.cds`** e **`cep.cds`**.
+Nesta parte do exercício, você irá criar os serviços necessários para o **Sistema de Gestão Aérea**. Será definido um arquivo de serviço inicialmente: **`airline.cds`**.
 
-O para o sistema de aviação será capaz de expor entidades como **Aeronave**, **Companhia**, **Aeroporto**, entre outras. O serviço de CEP permitirá a consulta de endereços.
+O para o sistema de aviação será capaz de expor entidades como **Aeronave**, **Companhia**, **Aeroporto**, entre outras.
 
 ---
 
@@ -104,45 +104,9 @@ Esse padrão é repetido para todas as entidades:
 
 ---
 
-## **Passo 3: Definir o Serviço `CepService` no Arquivo `cep.cds`**
-Abra o arquivo **`cep.cds`** e adicione a seguinte definição:
-
-```cds
-using processo_seletivo.esquema as nm from '../db/cep';
-
-service CepService @(path: '/viacep') {
-    @readonly
-    entity Cep as projection on nm.Cep;
-}
-```
-
---- 
-
-O arquivo **`cep.cds`** define o **serviço REST** chamado **`CepService`**, que expõe uma entidade para consulta de dados de endereços baseados em CEPs.
-
----
-
-### **Definição do serviço**
-
-![image](https://github.com/user-attachments/assets/499249c8-7321-4522-9fb4-477534805294)
-
-- **`using btpexp.esquema as nm`**: Importa a definição da entidade **`Cep`** do arquivo **`cep.cds`** localizado na pasta **`/db`** e atribui o alias **`nm`**.
-- **`service CepService`**: Define o serviço chamado **`CepService`**, que estará acessível na URL base **`/viacep`**.
-
----
-
-### **Projeção da entidade `Cep`**
-
-![image](https://github.com/user-attachments/assets/069a3f4c-9a32-438a-b4b7-5851981c2fa2)
-
-- **`@readonly`**: Indica que a entidade **`Cep`** só pode ser lida (operações **GET**), sem permitir **criação, atualização ou exclusão** de registros.
-- **`projection on nm.Cep`**: Cria uma projeção baseada na entidade **`Cep`**, limitando os dados que podem ser expostos pelo serviço REST.
-
----
-
 ## Passo 3: Teste Inicial 
 
-Agora, para verificar se esses serviços estão devidamente configurados e bem localizados, vá no terminal e execute o comando:
+Agora, para verificar se esse serviço está devidamente configurado e bem localizado, vá no terminal e execute o comando:
 
 ```sh
 cds watch
