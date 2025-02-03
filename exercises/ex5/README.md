@@ -154,68 +154,7 @@ DELETE http://localhost:4004/airline/ReservaPassagem('550e8400-e29b-41d4-a716-44
 
 ---
 
-### Arquivo `horario_voo.http`
-
-#### Criar um horário de voo
-
-```http
-### Criar Horário do Voo
-POST http://localhost:4004/airline/HorarioVoo
-Content-Type: application/json
-
-{
-  "id_companhia": "550e8400-e29b-41d4-a716-446655440004",
-  "id_conexao": "550e8400-e29b-41d4-a716-446655440005",
-  "id_aeronave": "550e8400-e29b-41d4-a716-446655440006",
-  "nr_voo": "AB123",
-  "partida_prevista": "10:00:00",
-  "chegada_prevista": "13:00:00",
-  "data": "2025-01-15",
-  "nr_assentos_executivo": 10,
-  "nr_assentos_economico": 100,
-  "nr_assentos_max": 110
-}
-```
-
-#### Consultar horários de voo
-
-```http
-### Buscar Horário do Voo
-GET http://localhost:4004/airline/HorarioVoo
-```
-
-#### Atualizar horário de partida
-
-```http
-### Atualizar Horário do Voo
-PATCH http://localhost:4004/airline/HorarioVoo('550e8400-e29b-41d4-a716-446655440007')
-Content-Type: application/json
-
-{
-  "partida_prevista": "11:00:00"
-}
-```
-
-#### Deletar um horário de voo
-
-```http
-### Deletar Horário do Voo
-DELETE http://localhost:4004/airline/HorarioVoo('550e8400-e29b-41d4-a716-446655440007')
-```
-
----
-
-## Passo 3: Executar os testes no VS Code
-
-1. Abra o VS Code e vá até a pasta `tests`.
-
-2. Abra um dos arquivos HTTP, como `passageiro.http`.
-
-3. Clique em **Send Request** para executar o teste. O resultado da requisição será exibido em um painel no VS Code.
-
----
-
-## Passo 4: Verificar os resultados
+## Passo 3: Verificar os resultados
 
 Para operações bem-sucedidas, você deverá ver códigos de status `200 OK` ou `201 Created`.
 
