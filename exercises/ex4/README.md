@@ -47,7 +47,7 @@ class PassageiroService {
         }
 
         const duplicado = await cds.tx(req).run(
-            SELECT.one.from('processo_seletivo.airlines.Passageiro').where({ cpf })
+            SELECT.one.from('btpexp.airlines.Passageiro').where({ cpf })
         );
         if (duplicado) {
             throw new Error("DUPLICATE_PASSENGER");
@@ -67,16 +67,31 @@ class PassageiroService {
     static errorHandler(err, req) {
         switch (err.message) {
             case "INVALID_CPF":
-                req.reject(400, "O CPF informado não é válido.");
+                console.error ({
+                    code: 400,
+                    message: 'O CPF informado não é válido.',
+                    target: 'CPF',
+                    status: 418
+                })
                 break;
             case "EMAIL_INVALIDO":
-                req.reject(400, "O email informado não é válido.");
+                console.error ({
+                    code: 400,
+                    message: 'O email informado não é válido.',
+                    target: 'EMAIL',
+                    status: 418
+                })
                 break;
             case "DUPLICATE_PASSENGER":
-                req.reject(400, "Já existe um passageiro com o mesmo CPF.");
+                console.error ({
+                    code: 400,
+                    message: 'Já existe um passageiro com o mesmo CPF.',
+                    target: 'CPF',
+                    status: 418
+                })
                 break;
             default:
-                req.reject(500, "Erro inesperado no sistema.");
+                console.error(err)
         }
     }
 }
@@ -149,7 +164,7 @@ A classe encapsula todas as funções de validação e tratamento de erros em m�
 
 #### **Verificação de Passageiro Duplicado**
 
-![image](https://github.com/user-attachments/assets/1a7f9563-1c2e-4cac-ac5a-28215701b4f5)
+![image](https://github.com/user-attachments/assets/dfa7b9ea-a26e-4ac4-b326-20ef9042f784)
 
 - Realiza uma consulta no banco de dados para verificar se já existe um passageiro com o mesmo CPF.
 - Se encontrar um registro duplicado, lança o erro **`DUPLICATE_PASSENGER`**.
@@ -158,7 +173,7 @@ A classe encapsula todas as funções de validação e tratamento de erros em m�
 
 ### **Função `errorHandler(err, req)`**
 
-![image](https://github.com/user-attachments/assets/308ee114-72d0-4567-8375-415facac8939)
+![image](https://github.com/user-attachments/assets/4f6b6bd1-dce4-4b96-82a2-357d835fe9a2)
 
 - **Intercepta e trata os erros** gerados durante as operações.
 - Cada erro específico é associado a uma mensagem personalizada:
@@ -216,13 +231,13 @@ class ReservaPassagemService {
     static errorHandler(err, req) {
         switch (err.message) {
             case "ASSENTO_OCUPADO":
-                req.reject(400, "O assento solicitado já está ocupado.");
+                console.error(400, "O assento solicitado já está ocupado.");
                 break;
             case "CLASSE_INVALIDA":
-                req.reject(400, "A classe informada não é válida.");
+                console.error(400, "A classe informada não é válida.");
                 break;
             default:
-                req.reject(500, "Erro inesperado no sistema.");
+                console.error(500, "Erro inesperado no sistema.");
         }
     }
 }
@@ -279,7 +294,7 @@ A classe encapsula as validações e os métodos de gerenciamento para a entidad
 
 ### **Função `errorHandler(err, req)`**
 
-![image](https://github.com/user-attachments/assets/e94b869e-aecf-447d-8cf8-d792321980ae)
+![image](https://github.com/user-attachments/assets/a84546eb-8af3-41b0-9bfd-944fe4674ed9)
 
 - **Intercepta e trata os erros** gerados durante a operação de criação de reserva.
 - Cada erro específico retorna uma mensagem personalizada:
@@ -317,56 +332,6 @@ module.exports = cds.service.impl(function () {
 
 ---
 
-Nesta parte do exercício, você implementou funcionalidades de validação e gerenciamento personalizado para as entidades **`Passageiro`** e **`ReservaPassagem`**, usando arquivos **JavaScript** no backend do **SAP CAP**. Agora, vamos **testar um simples GET** nessas entidades utilizando arquivos **HTTP** diretamente no **VS Code**.
+Nesta parte do exercício, você implementou funcionalidades de validação e gerenciamento personalizado para as entidades **`Passageiro`** e **`ReservaPassagem`**, usando arquivos **JavaScript** no backend do **SAP CAP**.
 
----
-
-## **Testando as entidades com GET usando arquivos HTTP**
-
-### **Passo 1: Criar uma pasta para os arquivos de teste**
-Para organizar os testes, crie uma pasta chamada **`tests`** na raiz do projeto:
-
-![image](https://github.com/user-attachments/assets/0990423d-b70a-4a5e-a0d2-d72428da998c)
-
----
-
-### **Passo 2: Configurar os arquivos de teste HTTP**
-
-#### **Arquivo `passageiro-get.http`**
-Este arquivo fará uma requisição **GET** para listar todos os passageiros cadastrados.
-
-```http
-### Consultar todos os passageiros
-GET http://localhost:4004/airline/Passageiro
-```
-
-#### **Arquivo `reserva_get.http`**
-Este arquivo fará uma requisição **GET** para listar todas as reservas de passagens.
-
-```http
-### Consultar todas as reservas de passagem
-GET http://localhost:4004/airline/ReservaPassagem
-```
-
----
-
-### **Passo 3: Executar os testes no VS Code**
-1. Certifique-se de que a **extensão REST Client** está instalada.
-2. Em um dos arquivos HTTP (por exemplo, **`passageiro-get.http`**) e clique em **`Send Request`** no topo da solicitação para enviar o teste.
-
-![image](https://github.com/user-attachments/assets/db0b1286-912e-4e79-9313-8cc4900eb6af)
-
----
-
-Se ocorrerem erros, verifique se os serviços foram iniciados corretamente com o comando:
-
-```sh
-cds watch
-```
-
-Provavelmente a tabela de Passageiros estará vazia, então você pode criar outros arquivos de teste com outros endpoints para fazer essa busca de dados usando o GET.
-
----
-
-⚠️ **Importante:**  
-Estes testes de **GET** são básicos e usados apenas para verificar se os dados estão sendo retornados corretamente. Na [**Aula 5**](https://github.com/ViniciusInfinitfy/btp-experience-AD267/tree/main/exercises/ex5), você aprenderá a testar operações **POST, PUT e DELETE**, aplicando validações mais complexas.
+Na [**Aula 5**](https://github.com/ViniciusInfinitfy/btp-experience-AD267/tree/main/exercises/ex5), você aprenderá a testar operações **GET, POST, PUT e DELETE**, com requisições e arquivos HTTP no Visual Studio Code.
