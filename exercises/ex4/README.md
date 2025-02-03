@@ -210,12 +210,12 @@ class ReservaPassagemService {
     }
 
     static async validarReserva(req) {
-        const { id_horario_voo, assento, classe } = req.data;
+        const { assento, classe } = req.data;
 
         // Verificar se o assento está disponível
         const assentoExistente = await cds.tx(req).run(
             SELECT.one.from('processo_seletivo.airlines.ReservaPassagem')
-                .where({ id_horario_voo, assento })
+                .where({ assento })
         );
         if (assentoExistente) {
             throw new Error("ASSENTO_OCUPADO");
