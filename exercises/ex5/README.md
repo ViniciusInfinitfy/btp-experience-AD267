@@ -22,8 +22,6 @@ Neste exercício, você testará todos os serviços implementados no projeto uti
 
 Na pasta chamada `tests` na raiz do projeto, criada na aula anterior, renomeie os nomes dos arquivos para manterem um padrão mostrando apenas qual serviço/entidade será testada.
 
-Além disso, crie um arquivo para testar a entidade `horario_voo`:
-
 ![image](https://github.com/user-attachments/assets/6d760afc-488e-4dc5-9bf9-95f4348a08d9)
 
 ### Estrutura esperada:
@@ -32,7 +30,6 @@ Além disso, crie um arquivo para testar a entidade `horario_voo`:
 /tests
   ├── passageiro.http
   ├── reserva_passagem.http
-  ├── horario_voo.http
 ```
 
 ---
@@ -67,21 +64,44 @@ GET http://localhost:4004/airline/Passageiro
 
 #### Atualizar o nome do passageiro
 
+Nessa parte de atualizar, você vai precisar identificar alguns campos obrigatórios para o SAP CAP entender qual registro atualizar.
+
+Nesse caso de Passageiro, os campos necessários para atualizar o registro são:
+- **id_passageiro**: Nesse campo, ele vai no URL da requisição e o valor dele, você pega usando o método GET
+- **cpf**: Ele também vai no URL da requisição. Seu valor você buscará no método GET
+- **data_nascimento**: Ele também irá no URL da requisição e seu valor, você buscará no método GET
+
+**IMPORTANTE:** Esses campos obrigatórios variam de entidade para entidade. Você deve saber o que é necessário para sua requisição.
+
+Além disso, por nós estarmos usando a annotation `@odata.etag`, é necessário colocarmos no cabeçalho da requisição um campo chamado `If-Match`. Seu valor vai ser igual ao valor do campo `ModifiedAt` que aparecerá no GET.
+
+**Isso vale para o `DELETE` também**. Caso você não esteja usando essa annotation, você não precisa disso.
+
+![image](https://github.com/user-attachments/assets/33216e64-129d-468b-a975-2cd5d80ed673)
+
+Após isso, você pode colocar no conteúdo que deseja atualizar.
+
 ```http
 ### Atualizar Passageiro
-PATCH http://localhost:4004/airline/Passageiro('550e8400-e29b-41d4-a716-446655440000')
+PUT/PATCH http://localhost:4004/airline/Passageiro(id_passageiro='',cpf='',data_nascimento='')
 Content-Type: application/json
+If-Match: ""
 
 {
   "nome": "João Silva Atualizado"
 }
 ```
 
+**PUT vs PATCH**
+- PUT: Todo campo que EXISTE na entidade, e você NÃO COLOCAR dentro do body da requisição, ele retornará `null`.
+- PATCH: Somente os campos que você colocar serão ALTERADAS. Campos que você NÃO COLOCAR, não serão alterados.
+
 #### Deletar um passageiro
 
 ```http
 ### Deletar Passageiro
-DELETE http://localhost:4004/airline/Passageiro('550e8400-e29b-41d4-a716-446655440000')
+DELETE http://localhost:4004/airline/Passageiro(id_passageiro='')
+If-Match: ""
 ```
 
 ---
