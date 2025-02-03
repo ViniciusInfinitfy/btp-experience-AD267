@@ -93,8 +93,8 @@ If-Match: ""
 ```
 
 **PUT vs PATCH**
-- PUT: Todo campo que EXISTE na entidade, e você NÃO COLOCAR dentro do body da requisição, ele retornará `null`.
-- PATCH: Somente os campos que você colocar serão ALTERADAS. Campos que você NÃO COLOCAR, não serão alterados.
+- **PUT**: Todo campo que EXISTE na entidade, e você NÃO COLOCAR dentro do body da requisição, ele retornará `null`.
+- **PATCH**: Somente os campos que você colocar serão ALTERADAS. Campos que você NÃO COLOCAR, não serão alterados.
 
 #### Deletar um passageiro
 
@@ -116,8 +116,7 @@ POST http://localhost:4004/airline/ReservaPassagem
 Content-Type: application/json
 
 {
-  "id_horario_voo": "550e8400-e29b-41d4-a716-446655440001",
-  "id_passageiro": "550e8400-e29b-41d4-a716-446655440000",
+  "id_passageiro": "*", // buscar o valor do id_passageiro com o método GET
   "assento": "12A",
   "classe": "Econômica",
   "status": "Confirmada",
@@ -137,8 +136,9 @@ GET http://localhost:4004/airline/ReservaPassagem
 
 ```http
 ### Atualizar Reserva
-PATCH http://localhost:4004/airline/ReservaPassagem('550e8400-e29b-41d4-a716-446655440003')
+PUT/PATCH http://localhost:4004/airline/ReservaPassagem(id_reserva='')
 Content-Type: application/json
+If-Match: "" // Se for null o valor do ModifiedAt, pode colocar null
 
 {
   "status": "Cancelada"
@@ -149,7 +149,8 @@ Content-Type: application/json
 
 ```http
 ### Deletar Reserva
-DELETE http://localhost:4004/airline/ReservaPassagem('550e8400-e29b-41d4-a716-446655440003')
+DELETE http://localhost:4004/airline/ReservaPassagem(id_reserva='')
+If-Match: "" // Se for null o valor do ModifiedAt, pode colocar null
 ```
 
 ---
