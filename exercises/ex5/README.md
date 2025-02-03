@@ -20,9 +20,11 @@ Neste exercício, você testará todos os serviços implementados no projeto uti
 
 ## Passo 1: Organizar os arquivos de teste
 
-Crie uma pasta chamada `tests` na raiz do projeto, onde armazenaremos os arquivos de teste.
+Na pasta chamada `tests` na raiz do projeto, criada na aula anterior, renomeie os nomes dos arquivos para manterem um padrão mostrando apenas qual serviço/entidade será testada.
 
-(imagem da pasta sendo criada com os arquivos)
+Além disso, crie um arquivo para testar a entidade `horario_voo`:
+
+![image](https://github.com/user-attachments/assets/6d760afc-488e-4dc5-9bf9-95f4348a08d9)
 
 ### Estrutura esperada:
 
