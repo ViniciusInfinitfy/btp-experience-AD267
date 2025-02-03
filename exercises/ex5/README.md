@@ -44,6 +44,7 @@ Além disso, crie um arquivo para testar a entidade `horario_voo`:
 #### Criar um novo passageiro
 
 ```http
+### Adicionar Passageiro
 POST http://localhost:4004/airline/Passageiro
 Content-Type: application/json
 
@@ -60,12 +61,14 @@ Content-Type: application/json
 #### Consultar todos os passageiros
 
 ```http
+### Consultar Passageiro
 GET http://localhost:4004/airline/Passageiro
 ```
 
 #### Atualizar o nome do passageiro
 
 ```http
+### Atualizar Passageiro
 PATCH http://localhost:4004/airline/Passageiro('550e8400-e29b-41d4-a716-446655440000')
 Content-Type: application/json
 
@@ -77,6 +80,7 @@ Content-Type: application/json
 #### Deletar um passageiro
 
 ```http
+### Deletar Passageiro
 DELETE http://localhost:4004/airline/Passageiro('550e8400-e29b-41d4-a716-446655440000')
 ```
 
@@ -87,6 +91,7 @@ DELETE http://localhost:4004/airline/Passageiro('550e8400-e29b-41d4-a716-4466554
 #### Criar uma reserva válida
 
 ```http
+### Criar Reserva
 POST http://localhost:4004/airline/ReservaPassagem
 Content-Type: application/json
 
@@ -104,12 +109,14 @@ Content-Type: application/json
 #### Consultar todas as reservas
 
 ```http
+### Buscar Reserva
 GET http://localhost:4004/airline/ReservaPassagem
 ```
 
 #### Atualizar o status da reserva
 
 ```http
+### Atualizar Reserva
 PATCH http://localhost:4004/airline/ReservaPassagem('550e8400-e29b-41d4-a716-446655440003')
 Content-Type: application/json
 
@@ -121,6 +128,7 @@ Content-Type: application/json
 #### Deletar uma reserva de passagem
 
 ```http
+### Deletar Reserva
 DELETE http://localhost:4004/airline/ReservaPassagem('550e8400-e29b-41d4-a716-446655440003')
 ```
 
@@ -131,6 +139,7 @@ DELETE http://localhost:4004/airline/ReservaPassagem('550e8400-e29b-41d4-a716-44
 #### Criar um horário de voo
 
 ```http
+### Criar Horário do Voo
 POST http://localhost:4004/airline/HorarioVoo
 Content-Type: application/json
 
@@ -151,12 +160,14 @@ Content-Type: application/json
 #### Consultar horários de voo
 
 ```http
+### Buscar Horário do Voo
 GET http://localhost:4004/airline/HorarioVoo
 ```
 
 #### Atualizar horário de partida
 
 ```http
+### Atualizar Horário do Voo
 PATCH http://localhost:4004/airline/HorarioVoo('550e8400-e29b-41d4-a716-446655440007')
 Content-Type: application/json
 
@@ -168,6 +179,7 @@ Content-Type: application/json
 #### Deletar um horário de voo
 
 ```http
+### Deletar Horário do Voo
 DELETE http://localhost:4004/airline/HorarioVoo('550e8400-e29b-41d4-a716-446655440007')
 ```
 
