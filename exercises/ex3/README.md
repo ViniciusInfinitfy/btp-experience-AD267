@@ -106,7 +106,15 @@ Esse padrão é repetido para todas as entidades:
 
 ## Passo 3: Teste Inicial 
 
-Agora, para verificar se esse serviço está devidamente configurado e bem localizado, vá no terminal e execute o comando:
+Agora, temos que indicar ao CAP que os dados desses serviços estão guardados nas tabelas presentes no SQLite. Para isso, iremos executar o comando 
+
+```sh
+cds deploy --to sqlite
+```
+
+Assim, o próprio CAP já realiza as operações básicas de CRUD por conta própria. Caso esse comando não funcione, execute `cds deploy`.
+
+Depois disso, para verificar se esse serviço está devidamente configurado e bem localizado, vá no terminal e execute o comando:
 
 ```sh
 cds watch
