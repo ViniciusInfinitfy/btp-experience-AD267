@@ -10,6 +10,8 @@ Os arquivos CSV contendo os dados iniciais já estão disponíveis no repositór
 
 ![image](https://github.com/user-attachments/assets/1021e09f-633b-4c1f-ac56-2c2b34a13cbd)
 
+Caso você deseja adicionar automaticamente esses arquivos `.csv`, basta você executar o seguinte comando no terminal: `cds add data`. Assim, ele irá criar a pasta data/ e criar os arquivos com os nomes padronizados com as entidades feitas. Entretando eles não estarão com nenhum dado.
+
 ---
 
 ## **Passo 2: Executar o Deploy e Carregar os Dados**
