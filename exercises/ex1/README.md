@@ -256,16 +256,5 @@ Isso criará o banco de dados **SQLite** com as tabelas correspondentes às enti
 
 ---
 
-## **Passo 4: Testar o Modelo**
-1. Inicie o servidor CAP:  
-   ```sh
-   cds watch
-   ```
-2. No navegador, acesse `http://localhost:4004` e verifique se as entidades foram geradas corretamente.
-
-![image](https://github.com/user-attachments/assets/74506a4d-5316-4741-9be7-f934addf3ab2)
-
----
-
 ## **Conclusão**
 Agora que o **modelo de dados** foi definido e implantado, podemos prosseguir para o [**CAP Exercício 2**](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex2), onde carregaremos **dados iniciais** no sistema utilizando arquivos `.csv`.  
