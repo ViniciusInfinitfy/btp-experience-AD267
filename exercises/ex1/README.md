@@ -14,7 +14,7 @@ Ao final desta etapa, o sistema terá um **modelo de dados estruturado**, permit
 ### **1. Criando o Arquivo `airline.cds`**  
 1. No diretório do projeto, vá para a pasta `db` e crie o arquivo `airline.cds`:  
 
-![image](https://github.com/user-attachments/assets/eab98d96-8c71-4869-940b-297d80b499ec)
+![image](https://github.com/user-attachments/assets/6475323c-f546-42aa-be3b-4cbf94bdeedf)
 
 2. Abra o arquivo `airline.cds` e adicione as entidades relacionadas ao sistema aéreo:
 
