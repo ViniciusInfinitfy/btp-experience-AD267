@@ -35,6 +35,6 @@ Este exercício foca na construção de um **Sistema de Gestão Aérea** utiliza
 ![image](https://github.com/user-attachments/assets/570f22ce-a8e5-4860-a1db-fcf81156ad91)
 
 4. **Dados Iniciais para Carga**  
-   - Arquivos `.csv` contendo dados de exemplo para entidades como **Passageiros, Voos, Reservas e Aeronaves**.  
+   - Arquivos `.csv` contendo [dados de exemplo](https://github.com/ViniciusInfinitfy/btp-experience-AD267/tree/main/csv%20records) para entidades como **Passageiros, Voos, Reservas e Aeronaves**.  
 
 Continue para a parte do [**CAP Exercício 0: Configuração do ambiente de desenvolvimento CAP**](https://github.com/ViniciusInfinitfy/btp-experience-AD267/tree/main/exercises/ex99).
