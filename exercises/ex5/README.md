@@ -116,7 +116,7 @@ POST http://localhost:4004/airline/ReservaPassagem
 Content-Type: application/json
 
 {
-  "id_passageiro": "*", // buscar o valor do id_passageiro com o método GET
+  "id_passageiro": "*", // buscar o valor do id_passageiro com o método GET (REMOVER COMENTÁRIO)
   "assento": "12A",
   "classe": "Econômica",
   "status": "Confirmada",
@@ -138,7 +138,7 @@ GET http://localhost:4004/airline/ReservaPassagem
 ### Atualizar Reserva
 PUT/PATCH http://localhost:4004/airline/ReservaPassagem(id_reserva='')
 Content-Type: application/json
-If-Match: "" // Se for null o valor do ModifiedAt, pode colocar null
+If-Match: "" // Se for null o valor do ModifiedAt, pode colocar null sem as aspas (REMOVER COMENTÁRIO)
 
 {
   "status": "Cancelada"
@@ -150,7 +150,7 @@ If-Match: "" // Se for null o valor do ModifiedAt, pode colocar null
 ```http
 ### Deletar Reserva
 DELETE http://localhost:4004/airline/ReservaPassagem(id_reserva='')
-If-Match: "" // Se for null o valor do ModifiedAt, pode colocar null
+If-Match: "" // Se for null o valor do ModifiedAt, pode colocar null sem as aspas (REMOVER COMENTÁRIO)
 ```
 
 ---
