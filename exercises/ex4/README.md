@@ -214,7 +214,7 @@ class ReservaPassagemService {
 
         // Verificar se o assento está disponível
         const assentoExistente = await cds.tx(req).run(
-            SELECT.one.from('processo_seletivo.airlines.ReservaPassagem')
+            SELECT.one.from('btpexp.airlines.ReservaPassagem')
                 .where({ assento })
         );
         if (assentoExistente) {
