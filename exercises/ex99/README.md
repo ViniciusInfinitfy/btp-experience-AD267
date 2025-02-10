@@ -9,7 +9,7 @@ Ao final desta etapa, você terá seu ambiente pronto para modelar dados, criar 
 Antes de começar, certifique-se de que você tem:  
 - **Node.js (versão LTS)** instalado.  
 - **Editor de código**, como **VS Code**.  
-- **CAP CLI (`@sap/cds`)** instalado via `npm install -g @sap/cds`.  
+- **CAP CLI (`@sap/cds`)** instalado via `npm i -g @sap/cds`.  
 - **Banco de dados SQLite** configurado para desenvolvimento local.   
 
 Se algum desses itens não estiver instalado, acesse [Preparação](https://github.com/ViniciusInfinitfy/btp-experience2025-AD267/tree/main/exercises/ex0).  
